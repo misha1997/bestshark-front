@@ -1,7 +1,13 @@
+'use client'
+
 import Link from "next/link";
+import { useState } from "react";
+
+
 
 const TheGames = () => {
-  return (
+  let [isAuth, setIsAuth] = useState(true);
+  return ( isAuth ? 
     <aside>
       <ul className="game-list">
         <li>
@@ -80,7 +86,7 @@ const TheGames = () => {
         </li>
       </ul>
     </aside>
-  );
+  : <></>);
 };
 
 export { TheGames };

@@ -142,3 +142,8 @@ header .btn.sum::before {
 .filler {
   flex-grow: 1;
 }
+
+
+.h1onpage{
+  color: white;
+}

@@ -1,4 +1,6 @@
+
 import Link from "next/link";
+import uikit from "../uikit/style.module.css";
 
 const TheHeader = () => {
   return (
@@ -25,7 +27,7 @@ const TheHeader = () => {
       <Link href="#" className="btn sum">
         10 004 250.<span>19</span>
       </Link>
-      <Link href="#" className="btn blue">
+      <Link href="#" className={`${uikit.buttonCTA} ${uikit.blue}`}>
         Deposit
       </Link>
       <Link href="#" className="btn">
