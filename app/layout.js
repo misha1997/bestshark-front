@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
         <TheGames />
         <main>
           <TheHeader />
-          {children}
+          <div className="container wrapper">
+            {children}
+          </div>
         </main>
       </body>
     </html>

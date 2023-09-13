@@ -63,6 +63,11 @@ main {
   width: 100%;
 }
 
+.wrapper {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 header {
   padding: 24px 40px;
   display: flex;
@@ -177,16 +182,16 @@ header .btn.sum::before {
 .dropdown-list .divider {
   border-color: #262a37;
 }
-.dropdown-item .userName {
+.userName {
   display: flex;
   gap: 10px;
 }
-.dropdown-item .userName img.avatar {
+.userName img.avatar {
   width: 40px;
   height: 40px;
   border-radius: 8px;
 }
-.dropdown-item .userName .userId {
+.userName .userId {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -194,7 +199,7 @@ header .btn.sum::before {
   font-weight: 600;
   gap: 4px;
 }
-.dropdown-item .userName .userId span {
+.userName .userId span {
   color: #666b84;
   background: #191c26;
   padding: 0 6px;
