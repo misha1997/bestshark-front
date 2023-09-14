@@ -2,8 +2,10 @@
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { TheGames } from "./components/TheGames";
-import { TheHeader } from "./components/TheHeader";
+import  {TheGames}  from "./components/TheGames";
+import  {TheHeader}  from "./components/TheHeader/TheHeader.jsx";
+import  Chat from "./components/Chat/Chat.jsx";
+
 import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <TheGames />
+         <Chat />
         <main>
           <TheHeader />
           <div className="container wrapper">
