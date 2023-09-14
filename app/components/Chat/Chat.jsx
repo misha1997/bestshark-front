@@ -4,7 +4,7 @@ import Message from "./Message.jsx"
 
 export default function Chat(){
 
-    let [online, setOnline] = useState("2 400");
+    let [online, setOnline] = useState("50");
 
     let arrProps = [
         {
@@ -62,10 +62,10 @@ export default function Chat(){
             message: "I’ve booked a spot on the ava if anything, so I’m looking forward to it.",
         },
         {
-            name: "janstay",
+            name: "bebra",
             time: "09:25 pm",
-            avatar: "https://yt3.googleusercontent.com/9K8pKqHnNx5tIzq8T4XCncUvhg5lcmPT8-ISvL99nOh7kCalkVFsAtil5l11HFK1e_O3L5y6ePI=s900-c-k-c0x00ffffff-no-rj",
-            message: "I’ve booked a spot on the ava if anything, so I’m looking forward to it.",
+            avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBzQ17qynIcEYGQoQBshNnpMoDYWfyClUvw&usqp=CAU",
+            message: "I type thing in chat.",
         },
         {
             name: "janstay",
