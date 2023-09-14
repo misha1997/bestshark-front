@@ -21,6 +21,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-body);
   display: flex;
+  
+}
+
+body::-webkit-scrollbar{
+  width: 0px;
 }
 
 aside {
@@ -140,9 +145,6 @@ header .btn.sum::before {
   margin-right: 8px;
 }
 
-.filler {
-  flex-grow: 1;
-}
 .dropdown-list {
   background: #202430;
   border-radius: 8px;
