@@ -1,7 +1,10 @@
 'use client'
 
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
+import  {TheGames}  from "../components/TheGames";
+import  {TheHeader}  from "../components/TheHeader/TheHeader.jsx";
+import  Chat from "../components/Chat/Chat.jsx";
 
 import { usePathname } from "next/navigation";
 
@@ -17,7 +20,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <TheGames />
+         <Chat />
+        <main>
+          <TheHeader />
+          <div className="container wrapper">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
