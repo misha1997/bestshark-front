@@ -29,6 +29,8 @@ body::-webkit-scrollbar{
 }
 
 aside {
+  position: sticky;
+  top: 0px;
   width: 80px;
   height: 100vh;
   display: flex;

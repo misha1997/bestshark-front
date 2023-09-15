@@ -3,6 +3,7 @@
     justify-content: column;
     width: 900px;
     margin: 24px auto 0px auto;
+    height: 2000px;
 }
 
 .game{
@@ -67,4 +68,66 @@
     left: calc(75px + (55px/2));
     background: #13161E;   
     position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer h2{
+    color: var(--White, #FFF);
+    text-align: center;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px
+}
+
+.timer h3{
+    color: var(--black-600, #4A4E62);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.bet{
+    display: flex;
+    flex-direction: column;
+
+    width: inherit;
+    height: 210px;
+    padding: 16px;
+    border-radius: 0px 0px 12px 12px;
+    background: var(--black-50, #191C26);
+}
+
+.bet p{
+    color: var(--black-700, #555A71);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */        
+}
+
+.sum{
+    color: var(--black-700, #555A71);
+
+    margin-top: 6px;
+
+    padding: 10px 14px;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px solid var(--black-200, #262A37);
+    background: var(--black-100, #202430);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.sum::placeholder{
+    color: var(--black-700, #555A71);
 }

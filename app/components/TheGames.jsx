@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { useState } from "react";
 
+import styles from './games.modules.css';
+
 
 
 const TheGames = () => {
   let [isAuth, setIsAuth] = useState(true);
   return ( isAuth ? 
-    <aside>
+    <aside className={`${styles.main}`}>
       <ul className="game-list">
         <li>
           <Link href="/jackpot">

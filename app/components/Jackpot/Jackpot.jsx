@@ -15,8 +15,17 @@ export default function Jackpot(){
                         <div className={`${styles.outsideCircle}`}></div>
                         <div className={`${styles.mainCircle}`}></div>
                         <div className={`${styles.timer}`}>
-                            
+                            <h2> 
+                                120
+                            </h2>
+                            <h3>
+                                SECONDS
+                            </h3>
                         </div>
+                    </div>
+                    <div className={`${styles.bet}`}>
+                        <p>Enter the amount</p>
+                        <input className={`${styles.sum}`} type="text" placeholder="0.00"></input>
                     </div>
                 </div>
                 <div className={`${styles.players}`}>
