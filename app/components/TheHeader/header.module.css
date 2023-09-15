@@ -1,4 +1,8 @@
 .header{
+    
+}
+
+.headerAuth{
     position: sticky;
     top: 0;
     background: var(--black-25, #13161E);

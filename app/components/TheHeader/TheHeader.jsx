@@ -10,10 +10,10 @@ import styles from "./header.module.css"
 
 const TheHeader = () => {
 
-  let isAuth = true;
+  let isAuth = false;
 
   return (
-    <header className={`${styles.header}`}>
+    <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
       <div className={isAuth ? `${styles.wrapperAuth}` : `${styles.wrapper}`}>
         <div className={`${styles.navWrapper}`}>
           <Link href="/" className={`${styles.logo}`}>
