@@ -1,6 +1,5 @@
-import Navigation from "../components/Settings/Navigation.jsx";
+import Navigation from "../components/Transactions/Navigation.jsx";
 import "../globals.css";
-import "./style.css";
 
 export default function RootLayout({ children }) {
   return (

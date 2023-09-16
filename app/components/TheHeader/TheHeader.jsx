@@ -1,8 +1,6 @@
 
 
 import Link from "next/link";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
 import  Notification  from "./Notification.jsx";
 import UserMenu from "./UserMenu.jsx";
 
@@ -10,7 +8,7 @@ import styles from "./header.module.css"
 
 const TheHeader = () => {
 
-  let isAuth = false;
+  let isAuth = true;
 
   return (
     <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
@@ -43,7 +41,7 @@ const TheHeader = () => {
             <Link href="#" className="btn sum">
               10 004 250.<span>19</span>
             </Link>
-            <Link href="#" className="btn blue">
+            <Link href="/transactions" className="btn blue">
               Deposit
             </Link>
             <Link href="#" className="btn">

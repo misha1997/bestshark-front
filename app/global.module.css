@@ -1,9 +1,9 @@
-.wrapper{
+.wrapper {
     display: flex;
     position: relative;
 }
 
-.main{
+.main {
     background: #13161e;
     border-radius: 24px 0px 0px 24px;
     display: flex;
@@ -11,4 +11,10 @@
     width: 100%;
     min-height: 100vh;
     /* margin: auto; */
+}
+
+.colums {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 372px 504px;
 }

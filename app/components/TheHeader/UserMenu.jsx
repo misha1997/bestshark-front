@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
+import styles from "./header.module.css"
+
 export default function UserMenu() {
     return (
         <Menu as="div" className="relative inline-block text-left">
@@ -23,9 +25,9 @@ export default function UserMenu() {
             <Menu.Items className="dropdown-list account absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y focus:outline-none">
               <Menu.Item>
                 <Link href="#" className="dropdown-item">
-                  <div className="userName py-1">
-                    <img className="avatar" src="/Avatar.png" alt="" />
-                    <div className="userId">
+                  <div className={`${styles.userName} py-1`}>
+                    <img className={`${styles.avatar}`} src="/Avatar.png" alt="" />
+                    <div className={`${styles.userId}`}>
                       janstay
                       <span>ID: 420848</span>
                     </div>
@@ -40,13 +42,13 @@ export default function UserMenu() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="#" className="dropdown-item">
+                  <Link href="/settings" className="dropdown-item">
                     <img src="/settings.svg" alt="" />
                     Settings
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="#" className="dropdown-item">
+                  <Link href="/transactions/bets" className="dropdown-item">
                     <img src="/clock.svg" alt="" />
                     Bets
                   </Link>

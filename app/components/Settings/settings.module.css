@@ -1,0 +1,92 @@
+.progress {
+    height: 8px;
+}
+.account {
+    padding: 16px;
+    background: #191c26;
+}
+.account .userName .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+}
+
+.account .userName .userId {
+    font-size: 16px;
+}
+
+.account .userName .userId span {
+    background: #202430;
+}
+
+.userName {
+    display: flex;
+    gap: 10px;
+}
+.userName img.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.userName .userId {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 4px;
+}
+.userName .userId span {
+    color: #666b84;
+    background: #202430;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.selectList {
+    display: flex;
+    gap: 6px;
+}
+.selectList .buttons {
+    display: flex;
+    gap: 6px;
+}
+.selectList .buttons button {
+    background: #13161e;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #4a4e62;
+    font-size: 16px;
+    font-weight: 500;
+}
+.selectList .buttons button.select {
+    background: #202843;
+    color: #5271ff;
+}
+.uploadFileItem {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #202430;
+    background: #191c26;
+    border-radius: 8px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.uploadFileItem .info {
+    width: 100%;
+    padding: 0 4px 0 16px;
+}
+.uploadFileItem .info .title {
+    color: #797e95;
+    font-size: 14px;
+    font-weight: 500;
+}
+.uploadFileItem .info .size {
+    color: #3b3f51;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}

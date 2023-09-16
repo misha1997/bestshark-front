@@ -3,7 +3,7 @@
 .main{
     margin-top: 80px;
     position: fixed;
-    
+    z-index: 1;
     right: 0px;
     width: 396px;
     height: calc(100vh - 80px);
