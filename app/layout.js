@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <TheGames/>
           <div className={`${styles.main}`}>
             <TheHeader />
-            <Chat/>
+            {/* <Chat/> */}
             {children}
           </div>
         </div>

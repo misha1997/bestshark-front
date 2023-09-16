@@ -1,9 +1,24 @@
+
 .main{
+    position: relative;
     display: flex;
     justify-content: column;
-    width: 900px;
-    margin: 24px auto 0px auto;
+    width: var(--gamewidth);
+    margin: 24px calc((100% - var(--gamewidth)) / (var(--kefright) + 1)) 0px calc((100% - var(--gamewidth)) / (var(--kefleft) + 1));
     height: 2000px;
+}
+
+.ellipse1{
+    position: absolute;
+    top: -70px;
+    left: -60px;
+    fill: red;
+
+}
+
+.gamesection{
+    display: flex;
+    gap: 24px;
 }
 
 .game{
@@ -29,6 +44,7 @@
     gap: 8px;
 
     color: #fff;
+    border-bottom: 1px solid var(--black-100, #202430);
 }
 
 .wheel{
@@ -95,27 +111,35 @@
 }
 
 .bet{
+    position: relative;
+    
     display: flex;
     flex-direction: column;
 
     width: inherit;
-    height: 210px;
+    /* height: 210px; */
     padding: 16px;
     border-radius: 0px 0px 12px 12px;
     background: var(--black-50, #191C26);
+
 }
 
 .bet p{
+
     color: var(--black-700, #555A71);
 
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px; /* 142.857% */        
+    line-height: 20px; /* 142.857% */    
+    
+
 }
 
 .sum{
     color: var(--black-700, #555A71);
+
+    max-height: 44px;
 
     margin-top: 6px;
 
@@ -126,8 +150,220 @@
     border: 1px solid var(--black-200, #262A37);
     background: var(--black-100, #202430);
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    /* box-sizing: border-box; */
 }
 
 .sum::placeholder{
     color: var(--black-700, #555A71);
+}
+
+.modifybutton{
+    padding: 3px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--black-100, #202430);
+    background: var(--black-50, #191C26);
+
+    color: var(--black-600, #4A4E62);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+
+}
+
+.bet > .wrapper{
+    position: absolute;
+    top: 52px;
+    right: 30px;
+}
+
+.addcash{
+    display: flex;
+    width: 100%;
+    gap: 4px;
+}
+
+.addcashbutton{
+    margin-top: 8px;
+
+    display: flex;
+    padding: 3px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+
+    max-height: 24px;
+
+    box-sizing: border-box;
+    
+    border-radius: 4px;
+    border: 1px solid var(--black-100, #202430);
+    background: var(--black-50, #191C26);
+    
+    color: var(--black-600, #4A4E62);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.play{
+    margin-top: 32px;
+
+    width: 100%;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    /* border: 1px solid #FFF; */
+    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    /* Button/play */
+    box-shadow: 0px 4px 0px 0px #263475;
+
+    color: var(--White, #FFF);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.players{
+    width: 504px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playerscount{
+    margin-left: 4px;
+    padding: 2px 10px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    background: var(--primary-100, #263475);
+
+    color: var(--primary-400, #5271FF);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.playerslist{
+    height: 100%;
+    padding: 16px;
+    border-radius: 0px 0px 12px 12px;
+    background: var(--black-50, #191C26);
+}
+
+.tablehead{
+    width: 100%;
+    display: flex;
+}
+
+.tablehead > .tablecells{
+    padding: 8px 16px 8px 16px; 
+    color: var(--black-600, #4A4E62);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+}
+
+.tablehead > .dot{
+    border-radius: 8px 0px 0px 8px;
+    background: var(--black-25, #13161E);
+}
+
+.tablehead >  .dot > div{
+    width: 10px;
+    height: 10px;
+    background: var(--black-25, #13161E);
+}
+
+.tablehead > .user{
+    width: 206px;
+    align-items: center;
+    background: var(--black-25, #13161E);
+}
+
+.tablehead > .rate{
+    width: 130px;
+    align-items: center;
+    background: var(--black-25, #13161E);
+}
+
+.tablehead > .chance{
+    width: 94px;
+    align-items: center;
+    border-radius: 0px 8px 8px 0px;
+    background: var(--black-25, #13161E);
+}
+
+.playerdata{
+    display: flex;
+
+    color: var(--black-600, #4A4E62);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+.playerdata > .tablecells{
+
+    background: var(--black-200, #262A37);
+    padding: 8px 16px 8px 16px;
+
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.playerdata > .dot{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.playerdata > .user{
+    display: flex;
+    width: 206px;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.playerdata > .rate{
+    width: 130px;
+}
+
+.playerdata > .chance{
+    border-radius: 0px 8px 8px 0px;
+    width: 94px;
 }

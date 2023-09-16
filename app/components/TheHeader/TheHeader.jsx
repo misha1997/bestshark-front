@@ -10,7 +10,7 @@ import styles from "./header.module.css"
 
 const TheHeader = () => {
 
-  let isAuth = false;
+  let isAuth = true;
 
   return (
     <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>

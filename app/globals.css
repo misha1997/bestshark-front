@@ -7,6 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --background-body: #191c26;
+  --gamewidth: 900px;
+  --kefleft: 1.1860465;
+  --kefright: 0.843137;
 }
 
 @media (prefers-color-scheme: dark) {
