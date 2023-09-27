@@ -20,11 +20,21 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-body);
-  display: grid;
-  grid-template-columns: auto 1fr;
+  /* display: flex; */
+  width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+p {
+  line-height: 20px;
 }
 
 aside {
+  position: sticky;
+  top: 0px;
   width: 80px;
   height: 100vh;
   display: flex;
@@ -61,10 +71,16 @@ aside ul.game-list li a span {
 main {
   background: #13161e;
   border-radius: 24px 0px 0px 24px;
+  width: 100%;
+}
+
+.wrapper {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 header {
-  padding: 24px 40px;
+  padding: 18px 24px;
   display: flex;
   align-items: center;
 }
@@ -97,7 +113,7 @@ header .btn {
   background: #202430;
   border-radius: 8px;
   padding: 0 12px;
-  margin: 0 4px;
+  margin-left: 8px;
   height: 44px;
   display: flex;
   align-items: center;
@@ -123,8 +139,9 @@ header .btn.dropdown::after {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("/chevron-up.svg");
+  background: url("/chevron-down.svg");
   margin-left: 8px;
+  transition: 0.2s;
 }
 
 header .btn.sum span {
@@ -139,6 +156,96 @@ header .btn.sum::before {
   margin-right: 8px;
 }
 
-.filler {
-  flex-grow: 1;
+.dropdown-list {
+  background: #202430;
+  border-radius: 8px;
+  border: 1px solid #262a37;
+  max-height: 500px;
+  overflow-x: auto;
+}
+.dropdown-list::-webkit-scrollbar {
+  width: 5px;
+}
+.dropdown-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.dropdown-list::-webkit-scrollbar-thumb {
+  background-color: #555a71;
+  border-radius: 10px;
+}
+.dropdown-list.account {
+  margin-right: 16px;
+}
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #555a71;
+  font-weight: 500;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.dropdown-list .divider {
+  border-color: #262a37;
+}
+.dropdown-item.logout {
+  color: #d04141;
+}
+.notification {
+  flex-direction: column;
+  align-items: start;
+  gap: 7px;
+  font-size: 12px;
+  color: #666b84;
+  font-weight: 400;
+  border: 0;
+  padding: 12px 16px 12px 28px;
+  border-bottom: 1px solid #262a37 !important;
+  position: relative;
+}
+.notification.active::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5271ff;
+  position: absolute;
+  top: 19px;
+  left: 16px;
+}
+.notification:last-child {
+  border: 0 !important;
+}
+.notification .title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.notification .date {
+  font-weight: 500;
+}
+.notification-header {
+  border-bottom: 1px solid #262a37 !important;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+.notification-header span {
+  color: #5271ff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.h1onpage {
+  color: white;
+}
+.colums {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 372px 504px;
 }

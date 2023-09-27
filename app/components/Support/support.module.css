@@ -1,0 +1,18 @@
+.createBtn {
+    padding: 8px 14px;
+    color: #5271FF;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #263475;
+    border-radius: 8px;
+}
+.createBtn::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('/plus.svg');
+    background-size: contain;
+}
