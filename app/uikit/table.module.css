@@ -20,6 +20,8 @@
 }
 .table .row .col {
     padding: 15px 10px;
+    display: flex;
+    align-items: center;
 }
 .row.header .col {
     padding: 8px 10px;

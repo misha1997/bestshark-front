@@ -60,7 +60,7 @@ export default function UserMenu() {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href="#" className="dropdown-item">
+                  <Link href="/support" className="dropdown-item">
                     <img src="/supporting.svg" alt="" />
                     Support
                   </Link>
